@@ -1,2 +1,4 @@
-# layout-bp
-Layout webpack boilerplate
+# Layout boilerplate
+
+Support:
+ - Scss
