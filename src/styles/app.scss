@@ -28,18 +28,19 @@ $fa-font-path: "../webfonts";
 .page {
   display: flex;
   flex-direction: column;
-  background: #F2F2F2;
-  width: 1920px;
-  height: 1080px;
+  max-width: 1920px;
+  max-height: 1080px;
+  margin: 0 auto;
+  background: no-repeat right center url("../img/background.png") #F2F2F2;
 
   &__background {
-    position: absolute;
+    display: flex;
+    flex-direction: column;
     background: #54499E;
     border-radius: 80px 0px 0px 80px;
     width: 607px;
     height: 1080px;
-    left: 1313px;
-    top: 0px;
+    z-index: 3;
   }
 }
 
@@ -71,6 +72,7 @@ $fa-font-path: "../webfonts";
   }
 
   &__no-active {
+    text-decoration: none;
     font-family: FuturaPT;
     font-size: 13px;
     line-height: 15px;
@@ -82,6 +84,7 @@ $fa-font-path: "../webfonts";
   }
 
   &__home {
+    text-decoration: none;
     font-family: FuturaPT;
     font-size: 13px;
     line-height: 15px;
@@ -108,6 +111,8 @@ $fa-font-path: "../webfonts";
     background: #7364D9;
     border-radius: 36px;
     padding: 18px 55px;
+    width: 210px;
+    height: 64px;
   }
 
   &_start {
@@ -120,7 +125,7 @@ $fa-font-path: "../webfonts";
     border-radius: 36px;
     padding: 22px 82px;
     width: 274px;
-    max-width: 274px;
+    height: 72px;
   }
 }
 
@@ -163,74 +168,67 @@ $fa-font-path: "../webfonts";
     }
   }
 
-  &__photo-one {
+  &__photo {
     background: no-repeat center center url("../img/photo-one.png");
-    width: 82.4px;
+    min-width: 83px;
+    min-height: 96px;
+    background-size: contain;
   }
 
-  &__block-statistic {
-    background: no-repeat center center url("../img/statistic.png");
-    position: absolute;
+  &__block-graphic {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: url("../img/statistic.png") no-repeat center center;
     width: 928px;
     height: 710px;
-    left: 841px;
-    top: 215px;
+    margin: 62px 151px 181px 68px;
+    background-size: contain;
+    z-index: 3;
   }
 
   &__photo-two {
     background: no-repeat center center url("../img/photo-two.png");
-    position: absolute;
     width: 60px;
     height: 60px;
-    left: 344px;
-    top: 733px;
+    background-size: contain;
+
   }
 
   &__photo-three {
     background: no-repeat center center url("../img/photo-three.png");
-    position: absolute;
     width: 75.68px;
     height: 75.68px;
-    left: 976.04px;
-    top: 500.04px;
+    background-size: contain;
   }
 
   &__point-one {
-    position: absolute;
+    display: flex;
+    flex-direction: row;
+
     width: 16px;
     height: 16px;
-    left: 420px;
-    top: -5%;
     background: #1574F6;
     border-radius: 50%;
   }
 
-  &__point-two {
-    position: absolute;
-    width: 39px;
-    height: 39px;
-    left: 520px;
-    top: -20%;
-    background: #FFB4C4;
-    border-radius: 50%;
+  &__graphic-info {
+    background: no-repeat right center url("../img/statistic-info.png");
+    width: 315px;
+    height: 80px;
+    z-index: 4;
   }
 
   &__point-three {
-    position: absolute;
     width: 16px;
     height: 16px;
-    left: 996px;
-    top: 255px;
     background: #FFB4C4;
     border-radius: 50%;
   }
 
   &__point-four {
-    position: absolute;
     width: 16px;
     height: 16px;
-    left: 769px;
-    top: 783px;
     background: #FFD167;
     border-radius: 50%;
   }
@@ -242,13 +240,18 @@ $fa-font-path: "../webfonts";
   flex-direction: row;
 
   &__icon-play {
+    width: 56px;
+    height: 56px;
+    border: 2px solid rgba(21, 116, 246, 0.402808);
+    box-sizing: border-box;
+    border-radius: 50%;
+  }
+
+  &__icon {
     background: no-repeat center center url("../img/icon-play.png");
     width: 10px;
     height: 16px;
-    border: 2px solid rgba(21, 116, 246, 0.402808);
-    box-sizing: border-box;
-    padding: 21px 21px 19px 25px;
-    border-radius: 50%;
+    margin: 19px 20px 18px 24px;
   }
 
   &__description-text {
@@ -274,5 +277,18 @@ $fa-font-path: "../webfonts";
     letter-spacing: 1.85714px;
     text-transform: uppercase;
     color: #1D2433;
+  }
+}
+
+.aside-menu {
+  display: flex;
+  flex-direction: row;
+  &__point-two {
+    width: 39px;
+    height: 39px;
+    background: #FFB4C4;
+    border-radius: 50%;
+    margin-top: 30px;
+    margin-right: 246px;
   }
 }
