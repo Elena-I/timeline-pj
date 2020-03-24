@@ -169,7 +169,7 @@ $fa-font-path: "../webfonts";
   }
 
   &__photo {
-    background: no-repeat center center url("../img/photo-one.png");
+    background: no-repeat center center url("../img/photo-man-one.png");
     min-width: 83px;
     min-height: 96px;
     background-size: contain;
@@ -187,51 +187,51 @@ $fa-font-path: "../webfonts";
     z-index: 3;
   }
 
-  &__photo-two {
-    background: no-repeat center center url("../img/photo-two.png");
-    width: 60px;
-    height: 60px;
-    background-size: contain;
-
-  }
-
-  &__photo-three {
-    background: no-repeat center center url("../img/photo-three.png");
-    width: 75.68px;
-    height: 75.68px;
-    background-size: contain;
-  }
-
-  &__point-one {
-    display: flex;
-    flex-direction: row;
-
-    width: 16px;
-    height: 16px;
-    background: #1574F6;
-    border-radius: 50%;
-  }
-
-  &__graphic-info {
-    background: no-repeat right center url("../img/statistic-info.png");
-    width: 315px;
-    height: 80px;
-    z-index: 4;
-  }
-
-  &__point-three {
-    width: 16px;
-    height: 16px;
-    background: #FFB4C4;
-    border-radius: 50%;
-  }
-
-  &__point-four {
-    width: 16px;
-    height: 16px;
-    background: #FFD167;
-    border-radius: 50%;
-  }
+  //&__photo-two {
+  //  background: no-repeat center center url("../img/photo-two.png");
+  //  width: 60px;
+  //  height: 60px;
+  //  background-size: contain;
+  //
+  //}
+  //
+  //&__photo-three {
+  //  background: no-repeat center center url("../img/photo-three.png");
+  //  width: 75.68px;
+  //  height: 75.68px;
+  //  background-size: contain;
+  //}
+  //
+  //&__point-one {
+  //  display: flex;
+  //  flex-direction: row;
+  //
+  //  width: 16px;
+  //  height: 16px;
+  //  background: #1574F6;
+  //  border-radius: 50%;
+  //}
+  //
+  //&__graphic-info {
+  //  background: no-repeat right center url("../img/statistic-info.png");
+  //  width: 315px;
+  //  height: 80px;
+  //  z-index: 4;
+  //}
+  //
+  //&__point-three {
+  //  width: 16px;
+  //  height: 16px;
+  //  background: #FFB4C4;
+  //  border-radius: 50%;
+  //}
+  //
+  //&__point-four {
+  //  width: 16px;
+  //  height: 16px;
+  //  background: #FFD167;
+  //  border-radius: 50%;
+  //}
 }
 
 .video {
@@ -283,7 +283,7 @@ $fa-font-path: "../webfonts";
 .aside-menu {
   display: flex;
   flex-direction: row;
-  &__point-two {
+  &__point-big-pink {
     width: 39px;
     height: 39px;
     background: #FFB4C4;
